@@ -137,9 +137,7 @@ if (message.content === "-help") {
 『-server/يعرض لك معلومات عن السيرفر』
 『-allbots/ لمعرفه عدد البوتات في السيرفر』
 『-botin/يعرض لك  كل معلومات البوت』
-『-support /للتواصل مع صاحب البوت』
 『-id/معلومات  عنك』
-『-invite/لدعوه البوت الي سيرفرك 』
 『-avatar /للعرض صورتك او صورة شخص فقط قم بعمل منشن له 』
 『-embed /البوت يكرر الكلام الي قلته ب امبد
 『-members/��عرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص』
@@ -392,7 +390,7 @@ var prefix = "-";
 if(message.channel.type === "dm") return;
 if(message.author.bot) return;
   if(!sWlc[message.guild.id]) sWlc[message.guild.id] = {
-    channel: "welcome"
+    channel: "city"
 }
 const channel = sWlc[message.guild.id].channel
   if (message.content.startsWith(prefix + "setwelcomer")) {
@@ -406,11 +404,11 @@ const channel = sWlc[message.guild.id].channel
 
 client.on("guildMemberAdd", member => {
       if(!sWlc[member.guild.id]) sWlc[member.guild.id] = {
-    channel: "welcome"
+    channel: "city"
   }
   const channel = sWlc[member.guild.id].channel
     const sChannel = sWlc[member.guild.id].channel
-    let welcomer = member.guild.channels.find('name', sChannel);
+    let welcomer = member.guild.channels.find('city', sChannel);
     let memberavatar = member.user.avatarURL
       if (!welcomer) return;
       if(welcomer) {
@@ -546,7 +544,7 @@ if(!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES")) return m
  
 
 client.on("message", message => {
- if (message.content === "-invite") {
+ if (message.content === "-1122") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setFooter('© Premium Bot :heart: جميع الحقوق محفوظة 2018 لــبوت')
@@ -585,7 +583,7 @@ client.on('message',message =>{
   });
 
 client.on("message", message => {
- if (message.content === "-support") {
+ if (message.content === "-su445rt") {
   const embed = new Discord.RichEmbed()
       .setTitle('Click here')
       .setURL(' https://discord.gg/ZnPDHaA ')
@@ -1573,7 +1571,7 @@ if (command == "غرد") {
     .setColor('RANDOM')
     .setAuthor(msg.author.username, msg.author.avatarURL)
     .setDescription(args.join(" "))
-    .setFooter('© . :AG || Copyright')
+    .setFooter('© . :LIZER|')
     msg.channel.sendEmbed(embed);
     msg.delete();
   }
@@ -1600,7 +1598,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "© Premium Bot ™."
+          text: "© LiZer PRo ™."
         }
       }}).then(msg => {msg.delete(3000)});
                           }
@@ -2026,7 +2024,7 @@ client.on('message',async message => {
     .addField('» مضى على دخولك الدسكورد', `${created.toFixed(0)} يومّا`,true)
     .addField('» مضى على دخولك السيرفر', `${joined.toFixed(0)} يومّا`,true)
     .addField('» دعوات',inviteCount,true)
-    .setFooter(' Premium Bot™ © | 2018.');
+    .setFooter(' © LiZer_PRo.');
 
     message.channel.send(embed);
   });
@@ -2166,10 +2164,10 @@ var skipReq = 0;
 var skippers = [];
 var now_playing = [];
 /*
-\\\\\\\\\\\\\\\\\\\\\\\\n3k4a/////////////////////////
-\\\\\\\\\\\\\\\\\\\\\\\\n3k4a/////////////////////////
-\\\\\\\\\\\\\\\\\\\\\\\\n3k4a/////////////////////////
-\\\\\\\\\\\\\\\\\\\\\\\\n3k4a/////////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\\LiZer_PRo/////////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\\LiZer_PRo/////////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\\LiZer_PRo/////////////////////////
+\\\\\\\\\\\\\\\\\\\\\\\\LiZer_PRo/////////////////////////
 */
 client.on('ready', () => {});
 console.log("Logged")
